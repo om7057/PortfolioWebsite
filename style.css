@@ -1,34 +1,77 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: blue;
     color: cornsilk;
 }
-#header{
+
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url(/PortfolioWebsite/1073623.jpg); 
+    background-image: url(/PortfolioWebsite/Background_Image.jpg);
     background-size: cover;
     background-position: center;
 }
-.container{
-    padding:10px 10%;
+
+.container {
+    padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     width: 140px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
-    margin:10px 20px;
+    margin: 20px 20px;
+}
+
+nav ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: brown;
 }
