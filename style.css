@@ -6,14 +6,14 @@
 }
 
 body {
-    background: blue;
+    background: rgb(37, 55, 127);
     color: cornsilk;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(/PortfolioWebsite/Background_Image.jpg);
+    background-image: url(/PortfolioWebsite/wall-wallpaper-concrete-colored-painted-textured-concept.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -36,13 +36,13 @@ nav {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 20px 20px;
+    margin: 10px 20px;
 }
 
 nav ul li a {
     color: blue;
     text-decoration: none;
-    font-size: medium;
+    font-size: 18px;
     position: relative;
 }
 
@@ -98,7 +98,7 @@ nav ul li a:hover::after {
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color:black;
+    color:rgb(214, 225, 48);
 }
 .tab-titles{
     display: flex;
@@ -134,4 +134,67 @@ nav ul li a:hover::after {
 }
 .tab-contents{
     display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#portfolio{
+    padding:50px 0;
+}
+.Acheievments-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px ;
+}
+.Acheievments{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.Achievements img{
+    width: 100%;
+    border-radius: 10px;
+    display:block;
+    transition:transform 0.5s
+
+}
+.layer{
+    width:100%;
+    height:0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#2a4398);
+    border-radius: 10px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 18px;
+    line-height: 60px;
+    background: chartreuse;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.Acheievments:hover img{
+    transform: scale(1.1);
+}
+.Acheievments:hover .layer{
+    height: 100%;
 }
